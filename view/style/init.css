@@ -1,0 +1,258 @@
+/*  Palletes couleurs
+
+Black: #313131 rgb (49, 49, 49)
+White: #FFFFFF rgb (255, 255, 255)
+Orange: #F37F1D rgb (243, 127, 29)
+Pinky : #EE6F6F; rgb (238, 111, 111)
+Red-Pink : #FF3131; rgb (243, 49, 49)
+
+/*import*/
+
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* ----------------------------- */
+
+
+/* ==reset */
+
+
+/* ----------------------------- */
+
+
+/* base font-size corresponds to 10px and is adapted to rem unit */
+
+html {
+  font-size: 125%; /* 1em = 20 px */
+}
+
+body {
+  background-image: url(../_inc/128-174.jpg);
+  color: #F37F1D;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Amatic SC', cursive;
+  line-height: 1.3;
+  font-weight: bold;
+  /* adapt to your design */
+}
+
+
+/* font-sizing for content */
+
+
+/* preserve vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption,
+details,
+figure,
+hgroup {
+  line-height: 1.3em;
+  margin: 0; /* need to be specified */
+  background-color: rgba(243, 49, 49, 0.9);
+  color: #FFFFFF;
+  padding: 0.8em;
+}
+
+h1,
+.h1-like {
+  color: #FFFFFF;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.4875em;
+  /* equiv 48px */
+  line-height: 1.5em;
+  margin: 0; /* need to be specified */
+}
+
+h2,
+.h2-like {
+  color: #313131;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.8em;
+  /* equiv 36px */
+  line-height: 1.5em;
+  margin: 0; /* need to be specified */
+}
+
+h3,
+.h3-like {
+  color: #313131;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  /* equiv 30px */
+  line-height: 1.5em;
+  margin: 0; /* need to be specified */
+}
+
+h4,
+.h4-like {
+  color: #313131;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.375em;
+  /* equiv 27.5px */
+  line-height: 1.5em;
+  margin: 0; /* need to be specified */
+}
+
+h5,
+.h5-like {
+  color: #313131;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.25em;
+  /* equiv 25px */
+  line-height: 1.5em;
+  margin: 0; /* need to be specified */
+}
+
+h6,
+.h6-like {
+  color: #313131;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.125em;
+  /* equiv 22.5px */
+  line-height: 1.5em;
+  margin: 0; /* need to be specified */
+}
+
+
+/* soft reset */
+
+html,
+body,
+textarea,
+figure,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding-left: 2em;
+}
+
+code,
+pre,
+samp {
+  white-space: pre-wrap;
+  font-family: 'Amatic SC', cursive;
+}
+
+code {
+  line-height: 1em;
+}
+
+table {
+  margin-bottom: 1.5em;
+}
+
+
+/* avoid top margins on first content element */
+
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+
+/* avoid margins on nested elements */
+
+li p,
+li ul,
+li ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/* HTML5 tags */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+
+/* max values */
+
+img,
+table,
+td,
+blockquote,
+code,
+pre,
+textarea,
+input,
+video {
+  max-width: 100%;
+}
+
+
+/* you shall not pass */
+
+div,
+textarea,
+table,
+td,
+th,
+code,
+pre,
+samp {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+
+/* pictures */
+
+img {
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+a img {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* scripts */
+
+body > script {
+  display: none !important;
+}

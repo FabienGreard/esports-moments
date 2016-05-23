@@ -22,5 +22,5 @@ io.sockets.on('connection', function(socket){ // socket init
   console.log("New Client");
 });
 
-server.listen(8080);
-console.log("Listening to PORT 8080");
+server.listen(3000);
+console.log("Listening to PORT 3000");

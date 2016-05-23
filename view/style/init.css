@@ -58,8 +58,6 @@ figure,
 hgroup {
   line-height: 1.3em;
   margin: 0; /* need to be specified */
-  background-color: rgba(243, 49, 49, 0.9);
-  color: #FFFFFF;
   padding: 0.8em;
 }
 

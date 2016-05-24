@@ -1,7 +1,46 @@
 /*
 Black: #313131 rgb (49, 49, 49)
+blackblack: #101010 rgb (16, 16, 16)
 White: #FFFFFF rgb (255, 255, 255)
 Orange: #F37F1D rgb (243, 127, 29)
 Pinky : #EE6F6F; rgb (238, 111, 111)
 Red-Pink : #FF3131; rgb (243, 49, 49)
 */
+.best_of_3_moments_contener{
+  margin: auto;
+  background-color: #F37F1D;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 1024px;
+}
+
+.moments_contener{
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.moments{
+  background-color: #F37F1D;
+  height: 400px;
+  width: 1024px;
+  display: inline-block;
+}
+
+.ad_left{
+  display: inline-block;
+  background-color: #F37F1D;
+  height: 400px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.ad_right{
+  display: inline-block;
+  background-color: #F37F1D;
+  height: 400px;
+  width: 100px;
+  margin-left: 20px;
+}

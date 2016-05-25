@@ -16,13 +16,15 @@
         </div>
         <nav class="nav_contener">
           <ul>
-            <li ng-repeat="category in header.categorys" ng-class="{ active:header.isSet(category.nav) }" ng-click="header.setNav(category.nav)">{{ category.name }}</li>
+            <li ng-repeat="category in header.categorys" ng-show="category.showNav" id="{{ $index +1 }}" ng-class="{ active:header.isSet(category.nav) }" ng-click="header.setTab(category.name);header.setNav(category.nav)">{{ category.name }}</li>
           </ul>
         </nav>
           <div class="search-wrapper">
-            <h3 class="hidden" ng-click="header.setTab(category.name)" ng-repeat="category in header.categorys | filter:search" >{{ category.name }}</h3>
-            <button class="search_submit" type="submit" >Search</button>
             <input class="search_input" ng-model="search" type="text" placeholder="Search here..." required="">
+            <button class="search_submit" type="submit" >Search</button>
+            <ul class="search_find_contener">
+              <li class="hidden" ng-click="header.setTab(category.name);header.setNav(category.nav);header.setShow(category)" ng-repeat="category in header.categorys | filter:search" >{{ category.name }}</li>
+            </ul>
           </div>
           <div id="tab"><h1>{{ header.getTab() }}</h1></div>
       </header>

@@ -6,6 +6,10 @@ Orange: #F37F1D rgb (243, 127, 29)
 Pinky : #EE6F6F; rgb (238, 111, 111)
 Red-Pink : #FF3131; rgb (243, 49, 49)
 */
+header{
+  position: relative;
+}
+
 .img_fullsize{
   background-color: rgba(0, 0, 0, 0.2);
   height: 300px;
@@ -19,7 +23,6 @@ Red-Pink : #FF3131; rgb (243, 49, 49)
   background-image: url("../_inc/header.jpg");
   background-repeat: no-repeat;
   background-position: center;
-
   -webkit-filter: blur(1px);
          -moz-filter: blur(1px);
           -ms-filter: blur(1px);
@@ -34,16 +37,33 @@ Red-Pink : #FF3131; rgb (243, 49, 49)
 }
 
 .img_fullsize_title{
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
   color: #F37F1D;
   text-align: center;
   padding-top: 86px;
+  cursor: default;
 }
 
 .img_fullsize_title_below{
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
   color: #FFFFFF;
+  cursor: default;
 }
 
 .nav_contener{
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
   color: #FFFFFF;
   list-style: none;
   position: absolute;
@@ -53,11 +73,153 @@ Red-Pink : #FF3131; rgb (243, 49, 49)
 
 .nav_contener li{
   display: inline-block;
-  padding: 5px;
+  padding: 5px 5px 0px 5px;
   cursor: pointer;
+  font-size: 22px;
+}
+
+.nav_contener li:hover{
+  border-bottom: solid 2px #FFFFFF;
 }
 
 .active{
   color: #F37F1D;
-  text-decoration: underline;
+  border-bottom: solid 2px #F37F1D;
+}
+
+.active:hover{
+  color: #F37F1D;
+  border-bottom: solid 2px #F37F1D!important;
+}
+
+.search-wrapper{
+  position: absolute;
+  bottom: 80px;;
+  right: 5px;
+}
+
+.search_input {
+  width: 0px;
+  height: 10px;
+  padding: 10px 5px;
+  float: left;
+  font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  border: 0;
+  background: #EEE;
+  border-radius: 3px 0 0 3px;
+  -webkit-transition: 1; /* Safari */
+  transition: 1s;
+}
+
+.search_input:focus {
+  outline: 0;
+  background: #fff;
+  box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.search_input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.search_input:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.search_input:-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.search_submit {
+  overflow: visible;
+  position: relative;
+  outline: none;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 30px;
+  width: 72px;
+  font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  line-height: 1px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background: #F37F1D;
+  border-radius: 0 3px 3px 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+
+.search_submit:before { /* left arrow */
+  content: '';
+  position: absolute;
+  border-width: 8px 8px 8px 0;
+  border-style: solid solid solid none;
+  border-color: transparent #F37F1D transparent;
+  top: 9px;
+  left: -6px;
+}
+
+.search_submit:hover{
+  background-color: #FF3131;
+}
+
+.search_submit:hover:before{
+  border-right-color: #FF3131;
+}
+
+.search_submit::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+  border: 0;
+  padding: 0;
+}
+
+.submit_active{
+  background-color: #FF3131;
+}
+
+.submit_active:before{
+  border-right-color: #FF3131;
+}
+
+.input_active{
+  width: 128px;
+}
+
+.hidden{
+  visibility: hidden;
+  position: absolute;
+  right: 200px;
+  -webkit-transition: right 0.4s; /* Safari */
+  transition: right 0.4s;
+}
+
+.find{
+  visibility: visible;
+  color: #FFFFFF;
+  position: absolute;
+  cursor: pointer;
+  right: 220px;
+  line-height: 1;
+
+}
+
+.find:hover{
+  color: #FF3131;
+}
+
+#tab{
+  background-color: #F37F1D;
+  text-align: center;
+  margin: 20px auto;
+  height: 50px;
+  width: 1024px;
+}
+
+#tab h1{
+  color: #FFFFFF;
+  line-height: 1;
 }

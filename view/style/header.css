@@ -4,7 +4,9 @@ blackblack: #101010 rgb (16, 16, 16)
 White: #FFFFFF rgb (255, 255, 255)
 Orange: #F37F1D rgb (243, 127, 29)
 Pinky : #EE6F6F; rgb (238, 111, 111)
-Red-Pink : #FF3131; rgb (243, 49, 49)
+Red-Pink : #FF3131; rgb (243, 49, 49) // dark pink-red : #C8161D; rgb (200, 22, 29)
+blue : #03A9F4; rgb (3, 169, 244) // blue dark : #034D76; rgb (3, 77, 118)
+green : #8BC34A; rgb (139, 195, 74) // green dark : #5F762E; rgb (95, 118, 46)
 */
 header{
   position: relative;
@@ -94,7 +96,7 @@ header{
 
 .search-wrapper{
   position: absolute;
-  bottom: -75px;
+  bottom: -95px;
   right: 5px;
 }
 
@@ -191,7 +193,7 @@ header{
 
 .search_find_contener{
   list-style: none;
-  height: 150px;
+  height: 170px;
   overflow: hidden;
   margin-left: 126px;
   padding: 0px;
@@ -204,7 +206,7 @@ header{
   border-bottom: 1px solid #FFFFFF;
   color: #FFFFFF;
   width: 0px;
-  height: 29px
+  height: 29px;
   cursor: pointer;
   padding: 2px;
 }
@@ -220,8 +222,6 @@ header{
 }
 
 #tab{
-  background-color: #F37F1D;
-  text-align: center;
   margin: 20px auto;
   height: 50px;
   width: 1024px;

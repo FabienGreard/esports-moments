@@ -5,7 +5,9 @@ blackblack: #101010 rgb (16, 16, 16)
 White: #FFFFFF rgb (255, 255, 255)
 Orange: #F37F1D rgb (243, 127, 29)
 Pinky : #EE6F6F; rgb (238, 111, 111)
-Red-Pink : #FF3131; rgb (243, 49, 49)
+Red-Pink : #FF3131; rgb (243, 49, 49) // dark pink-red : #C8161D; rgb (200, 22, 29)
+blue : #03A9F4; rgb (3, 169, 244) // blue dark : #034D76; rgb (3, 77, 118)
+green : #8BC34A; rgb (139, 195, 74) // green dark : #5F762E; rgb (95, 118, 46)
 
 /*import*/
 

@@ -1,9 +1,20 @@
 var app = angular.module("moments",[]);
 
-app.controller("headerController", function(){
+app.service("currentTab", function(){
+    var currentTab = "Home";
+    this.setTab = function(tab){
+        this.currentTab = tab;
+    };
+    this.getTab = function(){
+      return this.currentTab;
+    };
+});
+
+app.controller("headerController", function(currentTab){
   this.nav = 1;
   this.categorys = categorys;
   this.tab = "Home";
+  currentTab.setTab(this.tab);
 
   this.isSet = function(checkNav) {
     return this.nav === checkNav;
@@ -17,6 +28,7 @@ app.controller("headerController", function(){
   };
 
   this.setTab = function(setTab) {
+    currentTab.setTab(setTab);
     this.tab = setTab;
   };
 
@@ -42,6 +54,25 @@ app.controller("headerController", function(){
   }
 
 });
+
+app.directive("bestOf", function(currentTab){
+    return{
+      restrict: 'E',
+      templateUrl: 'bestof.html',
+      controller: function(){
+        this.categorys = categorys;
+        this.getBestOfTitle = function(){
+          if(currentTab.getTab() == "Home"){
+            return "Top Categorys !"
+          }else{
+            return "Top moments !"
+          }
+        };
+      },
+      controllerAs: "bestof"
+    };
+});
+
 
 var categorys = [
   { name: 'Home', nav: 1, showNav: true, temp: false },

@@ -2,6 +2,7 @@ $(".search_submit").click(function(){
   $(".search_submit").toggleClass("submit_active");
   $(".search_input").toggleClass("input_active");
   $(".search_input").val("");
+  $(".hidden").removeClass("find");
 });
 
 $(".search_input").on('change keyup copy paste cut', function() {

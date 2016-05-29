@@ -1,0 +1,17 @@
+<form class="contact_contener" name="contactForm" ng-show="contact.getBestOfTitle()" ng-submit="contactForm.$valid && contact.sendMail(subject,('email from : '+email+' by [web-app-esports-moments] : '+message))" novalidate>
+  <div class="frm_field_1_container">
+      <input ng-model="subject" type="text" id="sujects" class="form-field" placeholder="sujects" required >
+  </div>
+
+  <div class="frm_field_2_container">
+    <input ng-model="email" type="email" id="email" class="form-field" placeholder="Email" required >
+  </div>
+
+  <div class="frm_field_3_container">
+    <textarea ng-model="message" id="message" class='form-field' rows="8" cols="40" placeholder="Type your message here..." required ></textarea>
+  </div>
+
+  <div class="frm_submit">
+    <input type="submit" value="Send" id="form-button" />
+  </div>
+</section>

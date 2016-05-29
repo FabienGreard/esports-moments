@@ -1,23 +1,23 @@
-<section class="best_of_3_contener">
+<section class="best_of_3_contener" ng-show="bestof.getBestOfTitle()">
   <h1 class="best_of_3_title">{{ bestof.getBestOfTitle() }}</h1>
 <div class="rank_2">
   <div class="rank_2_view">
-    <div class="rank_2_content"> {{ bestof.getBestOfContent() }} </div>
-    <h4 class="rank_2_h1">{{ bestof.getBestOfName() }}</h4>
+    <h4 class="rank_2_h1">{{ bestof.getBestOfName(2) }}</h4>
+    <div class="rank_2_content" id="player_2">{{ bestof.getBestOfContent(2) }}</div>
   </div>
   <img class="rank_2_img" src="/_inc/second.png" alt="2" />
 </div>
 <div class="rank_1">
   <div class="rank_1_view">
-    <div class="rank_1_content"> {{ bestof.getBestOfContent() }} </div>
-    <h4 class="rank_1_h1">{{ bestof.getBestOfName() }}</h4>
+    <h4 class="rank_1_h1">{{ bestof.getBestOfName(1) }}</h4>
+    <div class="rank_1_content" id="player_1">{{ bestof.getBestOfContent(1) }}</div>
   </div>
   <img class="rank_1_img" src="/_inc/first.png" alt="1" />
 </div>
 <div class="rank_3">
   <div class="rank_3_view">
-    <div class="rank_3_content"> {{ bestof.getBestOfContent() }} </div>
-    <h4 class="rank_3_h1">{{ bestof.getBestOfName() }}</h4>
+    <h4 class="rank_3_h1">{{ bestof.getBestOfName(3) }}</h4>
+    <div class="rank_3_content" id="player_3">{{ bestof.getBestOfContent(3) }}</div>
   </div>
   <img class="rank_3_img" src="/_inc/third.png" alt="3" />
 </div>
